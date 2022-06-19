@@ -3,7 +3,7 @@ class Conta {
     private double saldo;
     private int agencia;
     private int numero;
-    private Cliente titular;
+    private Clientes titular;
     private static int total;
     
     
@@ -65,11 +65,11 @@ class Conta {
         this.agencia = agencia;            
     }
     
-    public void setTitular(Cliente titular) {
+    public void setTitular(Clientes titular) {
 		this.titular = titular;
 	}
     
-    public Cliente getTitular() {
+    public Clientes getTitular() {
 		return titular;
 	}
     

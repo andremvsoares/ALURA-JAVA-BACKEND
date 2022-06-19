@@ -5,7 +5,7 @@ public class TestaGetESet {
     conta.setNumero(1337);
     System.out.println(conta.getNumero());
 
-    Clientes paulo = new Clientes(); 
+    Cliente paulo = new Cliente(); 
     paulo.setNome("paulo silveira");
 
     conta.setTitular(paulo);
@@ -14,7 +14,7 @@ public class TestaGetESet {
 
         conta.getTitular().setProfissao("programador"); 
         //agora em duas linhas: 
-        Clientes titularDaConta = conta.getTitular();
+        Cliente titularDaConta = conta.getTitular();
         titularDaConta.setProfissao("programador");
 
         System.out.println(titularDaConta); 
